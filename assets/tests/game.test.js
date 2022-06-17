@@ -13,6 +13,6 @@ beforeEach(() => {
 
 describe("game keys exist", () => {
     test("does playerScore exist in game", () => {
-        expect(game.userScore).toBe(true);
+        expect("playerScore" in game).toBe(true);
     });
 });

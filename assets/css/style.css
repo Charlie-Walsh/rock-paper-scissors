@@ -106,3 +106,14 @@ header h1 {
 .rps-holder {
     margin-top: 30px;
 }
+
+/*Who won*/
+
+#who-won {
+    margin-top: 30px;
+}
+
+#who-won p {
+    color: #fff;
+    font-size: x-large;
+}
