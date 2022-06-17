@@ -31,6 +31,28 @@
         <div id="paper" class="col-4 r-p-s"></div>
         <div id="scissors" class="col-4 r-p-s"></div>
     </div>
+    <!--Intructions Modal-->
+    <div class="modal fade" id="instructions-modal" tabindex="-1" aria-labelledby="instructions-modal-heading" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title prompt" id="instructions-modal-heading">Instructions</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body prompt">
+              <p>Classic rock, paper, scissors game.</p>
+              <p>Rock beats Scissors!</p>
+              <p>Scissors beats Paper!</p>
+              <p>Paper beats Rock!</p>
+              <p>Click an icon to make your move.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="close-button" class="btn btn-secondary prompt" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!--Bootstrapjs and Popper-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/game.js" defer></script>
