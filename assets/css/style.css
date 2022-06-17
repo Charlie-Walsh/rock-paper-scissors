@@ -15,3 +15,13 @@ body {
 .promt {
     font-family: "Prompt", sans-serif;
 }
+
+/*Header*/
+
+header h1 {
+    font-family: "Fredoka One", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}

@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="assets/css/style.css">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="col">
         <h1>Rock, Paper, Scissors</h1>
-    </header>   
+    </header>
+    <!--Intructions Button-->
     <div class="row">
-        <div id="instructions" class="col">
-            <button class="btn"></button>
+        <div class="button-container col-12">
+            <div class="instructions-button text-center prompt">
+                <button type="button" id="intructions-button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#instructions-modal"> Instructions </button>
+            </div>
         </div>
     </div>
+    <!--Score Board-->
     <div class="row">
         <div id="score-board" class="col"></div>
     </div>
+    <!--Player Choices-->
     <div class="row">
         <div id="rock" class="col-4 r-p-s"></div>
         <div id="paper" class="col-4 r-p-s"></div>
