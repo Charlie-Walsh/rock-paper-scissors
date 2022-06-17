@@ -23,13 +23,24 @@
     </div>
     <!--Score Board-->
     <div class="row">
-        <div id="score-board" class="col"></div>
+        <div class="col text text-center">
+            <div id="score-board">
+            <p>Player Wins:</p><span id="wins">0</span>
+            <p>Machine Wins:</p><span id="losses">0</span>
+            </div>
+        </div>
     </div>
     <!--Player Choices-->
     <div class="row">
-        <div id="rock" class="col-4 r-p-s"></div>
-        <div id="paper" class="col-4 r-p-s"></div>
-        <div id="scissors" class="col-4 r-p-s"></div>
+        <div id="rock" class="col-4 r-p-s">
+            <img src="assets/images/rock.png" alt="rock" aria-label="rock">
+        </div>
+        <div id="paper" class="col-4 r-p-s">
+            <img src="assets/images/paper.png" alt="paper" aria-label="paper">
+        </div>
+        <div id="scissors" class="col-4 r-p-s">
+            <img src="assets/images/scissors.png" alt="scissors" aria-label="scissors">
+        </div>
     </div>
     <!--Intructions Modal-->
     <div class="modal fade" id="instructions-modal" tabindex="-1" aria-labelledby="instructions-modal-heading" aria-hidden="true">

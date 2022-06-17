@@ -75,3 +75,15 @@ header h1 {
 }
 
 /*Score Board*/
+
+#score-board {
+    background-color: #fff;
+    border: 3px solid orangered;
+    color: orangered;
+    margin: 30px;
+    font-size: 30px;
+}
+
+#sb-holder{
+    width: 40%;
+}
