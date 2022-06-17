@@ -39,6 +39,7 @@ header h1 {
   
 #intructions-button:hover {
     background-color: rgb(175, 73, 36);
+    border-color: orange;
 }
 
 /* Modal */
@@ -80,10 +81,28 @@ header h1 {
     background-color: #fff;
     border: 3px solid orangered;
     color: orangered;
-    margin: 30px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 20px;
     font-size: 30px;
 }
 
-#sb-holder{
-    width: 40%;
+/*Player Choices*/
+
+.rps {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(218, 212, 212);
+    border: 8px solid orangered;
+    border-radius: 50%;
+    margin: 30px;
+    padding: 10px;
+}
+
+.rps:hover {
+    border-color: orange;
+}
+
+.rps-holder {
+    margin-top: 30px;
 }
