@@ -35,11 +35,12 @@ header h1 {
 #intructions-button {
     background-color: orangered;
     color: #fff;
+    border: 3px solid white;
 }
   
 #intructions-button:hover {
     background-color: rgb(175, 73, 36);
-    border-color: orange;
+    border: 3px solid orange;
 }
 
 /* Modal */

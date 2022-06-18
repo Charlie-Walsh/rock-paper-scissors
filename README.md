@@ -31,6 +31,10 @@ I wanted to make this game bright and bold to appeal to a younger audience and h
 
 * As this will be aimed at a generally younger audience I will be using a bold and bubbly font for the title (Fredoka One) and a similarly rounded and spaced font for the rest of the text to make it easy to read (Prompt).
 
+### Images
+
+* Images used in the player choice buttons came from [Creazilla](https://creazilla.com/)
+
 ### Wireframes
 
 ![landing page](assets/images/wireframes/index.png)
