@@ -10,4 +10,21 @@ const game = {
     scissors: document.getElementById("scissors"),
 };
 
+function getComputerChoice() {
+    const choices = ['r', 'p', 's'];
+    const randomChoice = Math.floor(Math.random() * 3);
+    return choices[randomChoice];
+};
+
+
+/* game.rock.addEventListener('click', function() {
+    game('r')
+});
+game.paper.addEventListener('click', function() {
+    game('p')
+});
+game.scissors.addEventListener('click', function() {
+    game('s')
+}); */
+
 module.exports = {game}
