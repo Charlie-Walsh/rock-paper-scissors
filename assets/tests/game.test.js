@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-const {game} = require("../js/game");
+const {game, getComputerChoice, getPlayerChoice} = require("../js/game");
 
 beforeEach(() => {
     const fs = require("fs");
@@ -37,4 +37,24 @@ describe("game keys exist", () => {
         expect("scissors" in game).toBe(true);
     });
 });
+
+describe("does getComputerChoice work", () => {
+        beforeAll(() => {
+            game.computerChoice = []
+            getComputerChoice();
+        });
+    test("does computerChoice add the result to game.computerChoice", () => {
+        expect(game.computerChoice.length).toBe(1);
+    });
+});
+
+describe("does getPlayerChoice work", () => {
+    test("expect data-listener value to be true", () => {
+        const rock = document.getElementById("rock");
+        getPlayerChoice()
+        expect(rock.getAttribute("data-listener").toBe(true));
+    });
+});
+
+
 

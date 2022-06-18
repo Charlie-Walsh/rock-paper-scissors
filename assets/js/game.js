@@ -8,23 +8,29 @@ const game = {
     rock: document.getElementById("rock"),
     paper: document.getElementById("paper"),
     scissors: document.getElementById("scissors"),
-};
+    computerChoices: ['r', 'p', 's'],
+    computerChoice: [],
+    playerChoice: [],
+    };
 
 function getComputerChoice() {
-    const choices = ['r', 'p', 's'];
-    const randomChoice = Math.floor(Math.random() * 3);
-    return choices[randomChoice];
-};
+    game.computerChoice = [];
+    game.computerChoice.push(game.computerChoices[Math.floor(Math.random() * 3)]);
+    };
 
+function getPlayerChoice() {
+    game.rock.addEventListener('click', function() {
+        game.playerChoice.push(['r']);
+        game.rock.setAttribute("data-listener", "true");
+    });
+    game.paper.addEventListener('click', function() {
+        game.playerChoice.push(['p']);
+        game.paper.setAttribute("data-listener", "true");
+    });
+    game.scissors.addEventListener('click', function() {
+        game.playerChoice.push(['s']);
+        game.scissors.setAttribute("data-listener", "true");
+    });
+    };
 
-/* game.rock.addEventListener('click', function() {
-    game('r')
-});
-game.paper.addEventListener('click', function() {
-    game('p')
-});
-game.scissors.addEventListener('click', function() {
-    game('s')
-}); */
-
-module.exports = {game}
+module.exports = {game, getComputerChoice, getPlayerChoice}
