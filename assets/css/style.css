@@ -2,165 +2,161 @@
 
 /*General*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: rgb(65, 76, 180);;
+  background-color: rgb(65, 76, 180);
 }
 
 /*Typography*/
 
 .promt {
-    font-family: "Prompt", sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 
 /*Header*/
 
 header h1 {
-    font-family: "Fredoka One", sans-serif;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    padding: 30px;
+  font-family: "Fredoka One", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 /*Instructions*/
 
 .instructions-button {
-    margin: 30px;
+  margin: 30px;
 }
-  
+
 #intructions-button {
-    background-color: orangered;
-    color: #fff;
-    border: 3px solid white;
+  background-color: orangered;
+  color: #fff;
+  border: 3px solid white;
 }
-  
+
 #intructions-button:hover {
-    background-color: rgb(175, 73, 36);
-    border: 3px solid orange;
+  background-color: rgb(175, 73, 36);
+  border: 3px solid orange;
 }
 
 /* Modal */
 
 .modal-header {
-    background-color: orangered;
-    border: 2px solid #fff;
+  background-color: orangered;
+  border: 2px solid #fff;
 }
-  
+
 .modal-body {
-    background-color: orangered;
-    color: #fff;
-    border: 2px solid #fff;
+  background-color: orangered;
+  color: #fff;
+  border: 2px solid #fff;
 }
-  
+
 .modal-footer {
-    background-color: orangered;
-    border: 2px solid #fff;
+  background-color: orangered;
+  border: 2px solid #fff;
 }
-  
+
 .modal-title {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
-  
+
 #close-button {
-    background-color: #fff;
-    color: orangered;
-    border: 1px solid #fff;
+  background-color: #fff;
+  color: orangered;
+  border: 1px solid #fff;
 }
-  
+
 #close-button:hover {
-    background-color: rgb(218, 218, 218);
+  background-color: rgb(218, 218, 218);
 }
 
 /*Score Board*/
 
 #score-board {
-    background-color: #fff;
-    border: 3px solid orangered;
-    color: orangered;
-    width: 250px;
-    margin: 0 auto;
-    padding: 20px;
-    font-size: 30px;
+  background-color: #fff;
+  border: 3px solid orangered;
+  color: orangered;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 30px;
 }
 
 /*Player Choices*/
 
 .rps {
-    height: 150px;
-    width: 150px;
-    background-color: rgb(218, 212, 212);
-    border: 8px solid orangered;
-    border-radius: 50%;
-    margin: 30px;
-    padding: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(218, 212, 212);
+  border: 8px solid orangered;
+  border-radius: 50%;
+  margin: 30px;
+  padding: 10px;
 }
 
 .rps:hover {
-    border-color: orange;
+  border-color: orange;
 }
 
 .rps-holder {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 /*Who won*/
 
 #who-won {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 #who-won {
-    color: #fff;
-    font-size: x-large;
+  color: #fff;
+  font-size: x-large;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
+  header h1 {
+    padding: 15px;
+  }
 
-    header h1 {
-        padding: 15px;
-    }
+  .instructions-button {
+    margin: 15px;
+  }
 
-    .instructions-button {
-        margin: 15px;
-    }
+  #score-board {
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+  }
 
-    #score-board {
-        width: 200px;
-        margin: 0 auto;
-        padding: 20px;
-        font-size: 20px;
-    }
+  .rps {
+    height: 75px;
+    width: 75px;
+    margin: 15px;
+    padding: 10px;
+  }
 
-    .rps {
-        height: 75px;
-        width: 75px;
-        margin: 15px;
-        padding: 10px;
-    }
+  .rps-holder {
+    margin-top: 10px;
+  }
 
-    .rps-holder {
-        margin-top: 10px;
-    }
-
-    #who-won {
-        margin-top: 10px;
-        font-size: 20px;
-    }
+  #who-won {
+    margin-top: 10px;
+    font-size: 20px;
+  }
 }
 
-@media  screen and (max-width: 768px) and (min-width: 577px) {
-    
-    .rps {
-        height: 100px;
-        width: 100px;
-        margin: 15px;
-        padding: 10px;
-    }
-
-
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  .rps {
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+    padding: 10px;
+  }
 }
