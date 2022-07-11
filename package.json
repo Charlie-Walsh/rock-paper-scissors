@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "jest": "^28.1.1"
+    "jest": "^28.1.2"
   },
   "name": "rock-paper-scissors",
   "description": "<h1 style=\"text-align: center\">Rock, Paper, Scissors</h1>",

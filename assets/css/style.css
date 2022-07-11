@@ -118,3 +118,49 @@ header h1 {
     color: #fff;
     font-size: x-large;
 }
+
+@media screen and (max-width: 576px){
+
+    header h1 {
+        padding: 15px;
+    }
+
+    .instructions-button {
+        margin: 15px;
+    }
+
+    #score-board {
+        width: 200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .rps {
+        height: 75px;
+        width: 75px;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .rps-holder {
+        margin-top: 10px;
+    }
+
+    #who-won {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
+
+@media  screen and (max-width: 768px) and (min-width: 577px) {
+    
+    .rps {
+        height: 100px;
+        width: 100px;
+        margin: 15px;
+        padding: 10px;
+    }
+
+
+}
