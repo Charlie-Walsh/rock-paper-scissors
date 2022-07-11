@@ -14,13 +14,13 @@ const game = {
 };
 
 function getComputerChoice() {
-    game.computerChoice = [];
+    game.compChoice = [];
     game.compChoice.push(game.compChoices[Math.floor(Math.random() * 3)]);
 }
 
 function rps() {
     getComputerChoice();
-    console.log(game.computerChoice);
+    console.log(game.compChoice);
     let compChoice = game.compChoice[0];
     let plyrChoice = game.playerChoice[0];
 
@@ -46,7 +46,7 @@ function rps() {
             game.playerScore++;
             game.playerScoreSpan.textContent = game.playerScore;
             game.whoWon.textContent = "You win! Paper covers Rock";
-        } else if (compChoice == "s") {
+        } else if (compChoice === "s") {
             game.computerScore++;
             game.computerScoreSpan.textContent = game.computerScore;
             game.whoWon.textContent = "You lost! Scissors cut Paper";
@@ -69,19 +69,19 @@ function rps() {
 function getPlayerChoice() {
     game.rock.addEventListener("click", function() {
         game.playerChoice = [];
-        game.playerChoice.push(["r"]);
+        game.playerChoice.push("r");
         console.log(game.playerChoice);
         rps();
     });
     game.paper.addEventListener("click", function() {
         game.playerChoice = [];
-        game.playerChoice.push(["p"]);
+        game.playerChoice.push("p");
         console.log(game.playerChoice);
         rps();
     });
     game.scissors.addEventListener("click", function() {
         game.playerChoice = [];
-        game.playerChoice.push(["s"]);
+        game.playerChoice.push("s");
         console.log(game.playerChoice);
         rps();
     });
