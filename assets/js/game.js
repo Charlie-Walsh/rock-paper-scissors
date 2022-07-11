@@ -12,6 +12,7 @@ const game = {
     computerChoice: [],
     playerChoice: [],
 };
+
 function getComputerChoice() {
     game.computerChoice = [];
     game.computerChoice.push(game.computerChoices[Math.floor(Math.random() * 3)]);
@@ -66,19 +67,19 @@ function rps() {
 };
 
 function getPlayerChoice() {
-    game.rock.addEventListener("click", function () {
+    game.rock.addEventListener("click", function() {
         game.playerChoice = [];
         game.playerChoice.push(["r"]);
         console.log(game.playerChoice);
         rps()
     });
-    game.paper.addEventListener("click", function () {
+    game.paper.addEventListener("click", function() {
         game.playerChoice = [];
         game.playerChoice.push(["p"]);
         console.log(game.playerChoice);
         rps();
     });
-    game.scissors.addEventListener("click", function () {
+    game.scissors.addEventListener("click", function() {
         game.playerChoice = [];
         game.playerChoice.push(["s"]);
         console.log(game.playerChoice);
