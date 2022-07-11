@@ -48,13 +48,4 @@ describe("does getComputerChoice work", () => {
     });
 });
 
-describe("does getPlayerChoice work", () => {
-    test("expect data-listener value to be true", () => {
-        const rock = document.getElementById("rock");
-        getPlayerChoice()
-        expect(rock.getAttribute("data-listener").toBe(true));
-    });
-});
-
-
 

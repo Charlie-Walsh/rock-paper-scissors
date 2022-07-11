@@ -33,15 +33,15 @@
     <!--Player Choices-->
     <div class="row">
         <div  class="col text-center rps-holder">
-            <img id="rock" class="rps" data-listener="false" src="assets/images/rock.png" alt="rock" aria-label="rock">
-            <img id="paper" class="rps" data-listener="false" src="assets/images/paper.png" alt="paper" aria-label="paper">
-            <img id="scissors" class="rps" data-listener="false" src="assets/images/scissors.png" alt="scissors" aria-label="scissors">
+            <img id="rock" class="rps" src="assets/images/rock.png" alt="rock" aria-label="rock">
+            <img id="paper" class="rps" src="assets/images/paper.png" alt="paper" aria-label="paper">
+            <img id="scissors" class="rps" src="assets/images/scissors.png" alt="scissors" aria-label="scissors">
         </div>
     </div>
     <!--Who won?-->
     <div class="row">
-      <div id="who-won" class="col text-center prompt">
-        <p>You Win!</p>
+      <div class="col text-center prompt">
+        <p id="who-won"></p>
       </div>
     </div>
     <!--Intructions Modal-->
@@ -68,6 +68,6 @@
 
     <!--Bootstrapjs and Popper-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/game.js" defer></script>
+  <script type="module" src="assets/js/game.js" defer></script>
 </body>
 </html>
