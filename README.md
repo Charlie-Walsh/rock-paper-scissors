@@ -76,7 +76,7 @@ This can be found in the assets/tests folder in the GitHub repository.
 ### Bugs
 
 * TypeError: Cannot read properties of null (reading 'querySelector')
-    * I can find no solution to this bug. It claims it cannot read the property of the DOM element, which means that my code should not be working. However it works fine in my preview. I have spent a long time trying to fix this issue previously and spoke to two tutors on the support chat, neither could figure out why and scouring the web hasn't had anything fruitful. The only solution was to a problem I didn't have which was the script link being in the head of the HTML document. I will be testing manually from this point forward.
+    * I can find no solution to this bug. It claims it cannot read the property of the DOM element, which means that my code should not be working. However it works fine in my preview. I have spent a long time trying to fix this issue previously and spoke to two tutors on the support chat, neither could figure out why and scouring the web hasn't had anything fruitful. The only solution was to a problem I didn't have which was the script link being in the head of the HTML document. I will be testing manually from this point forward following the same procedure.
 
 <hr>
 
