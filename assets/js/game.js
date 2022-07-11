@@ -88,8 +88,7 @@ function getPlayerChoice() {
 if (typeof module !== "undefined")
     module.exports = {
         game,
-        getComputerChoice,
-        getPlayerChoice,
+        getComputerChoice
     };
 
 getPlayerChoice();

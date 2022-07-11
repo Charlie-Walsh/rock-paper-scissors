@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-const {game, getComputerChoice, getPlayerChoice} = require("../js/game");
+const {game, getComputerChoice} = require("../js/game");
 
 beforeEach(() => {
     const fs = require("fs");
