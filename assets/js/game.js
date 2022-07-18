@@ -31,11 +31,11 @@ function rps() {
     // Player chooses rock
     if (plyrChoice === "r") {
         if (compChoice === "s") {
-            game.playerScore++;
+            game.playerScore = game.playerScore + 1;
             game.playerScoreSpan.textContent = game.playerScore;
             game.whoWon.textContent = "You win! Rock breaks Scissors";
         } else if (compChoice === "p") {
-            game.computerScore++;
+            game.computerScore = game.computerScore + 1;
             game.computerScoreSpan.textContent = game.computerScore;
             game.whoWon.textContent = "You lost! Paper covers Rock";
         }
@@ -43,11 +43,11 @@ function rps() {
     // Player Chooses paper
     if (plyrChoice === "p") {
         if (compChoice === "r") {
-            game.playerScore++;
+            game.playerScore = game.playerScore + 1;
             game.playerScoreSpan.textContent = game.playerScore;
             game.whoWon.textContent = "You win! Paper covers Rock";
         } else if (compChoice === "s") {
-            game.computerScore++;
+            game.computerScore = game.computerScore + 1;
             game.computerScoreSpan.textContent = game.computerScore;
             game.whoWon.textContent = "You lost! Scissors cut Paper";
         }
@@ -55,11 +55,11 @@ function rps() {
     // Player Chooses scissors
     if (plyrChoice === "s") {
         if (compChoice === "p") {
-            game.playerScore++;
+            game.playerScore = game.playerScore + 1;
             game.playerScoreSpan.textContent = game.playerScore;
             game.whoWon.textContent = "You win! Scissors cut Paper";
         } else if (compChoice === "r") {
-            game.computerScore++;
+            game.computerScore = game.computerScore + 1;
             game.computerScoreSpan.textContent = game.computerScore;
             game.whoWon.textContent = "You lost! Rock breaks Scissors";
         }
@@ -86,10 +86,11 @@ function getPlayerChoice() {
         rps();
     });
 }
-if (typeof module !== "undefined")
+if (typeof module !== "undefined"){
      module.exports = {
         game,
         getComputerChoice
         };
+}
 
 getPlayerChoice();
