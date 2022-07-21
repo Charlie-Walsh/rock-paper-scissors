@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper, Scissors</title>
     <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -22,15 +17,7 @@
     <div class="row">
       <div class="button-container col-12">
         <div class="instructions-button text-center prompt">
-          <button
-            type="button"
-            id="instructions-button"
-            class="btn btn-lg"
-            data-bs-toggle="modal"
-            data-bs-target="#instructions-modal"
-          >
-            Instructions
-          </button>
+          <button type="button" id="instructions-button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#instructions-modal"> Instructions </button>
         </div>
       </div>
     </div>
@@ -48,27 +35,9 @@
     <!--Player Choices-->
     <div class="row">
       <div class="col text-center rps-holder">
-        <img
-          id="rock"
-          class="rps"
-          src="assets/images/rock.png"
-          alt="rock"
-          aria-label="rock"
-        />
-        <img
-          id="paper"
-          class="rps"
-          src="assets/images/paper.png"
-          alt="paper"
-          aria-label="paper"
-        />
-        <img
-          id="scissors"
-          class="rps"
-          src="assets/images/scissors.png"
-          alt="scissors"
-          aria-label="scissors"
-        />
+        <img id="rock" class="rps" src="assets/images/rock.png" alt="rock" aria-label="rock" />
+        <img id="paper" class="rps" src="assets/images/paper.png" alt="paper" aria-label="paper" />
+        <img id="scissors" class="rps" src="assets/images/scissors.png" alt="scissors" aria-label="scissors" />
       </div>
     </div>
     <!--Who won?-->
@@ -81,38 +50,17 @@
     <div class="row">
       <div class="button-container col-12">
         <div class="feedback-button text-center prompt">
-          <button
-            type="button"
-            id="feedback-button"
-            class="btn btn-lg"
-            data-bs-toggle="modal"
-            data-bs-target="#feedback-modal"
-          >
-            Rate Us!
-          </button>
+          <button type="button" id="feedback-button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#feedback-modal"> Rate Us! </button>
         </div>
       </div>
     </div>
     <!--Intructions Modal-->
-    <div
-      class="modal fade"
-      id="instructions-modal"
-      tabindex="-1"
-      aria-labelledby="instructions-modal-heading"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="instructions-modal" tabindex="-1" aria-labelledby="instructions-modal-heading" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title prompt" id="instructions-modal-heading">
-              Instructions
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h5 class="modal-title prompt" id="instructions-modal-heading"> Instructions </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body prompt">
             <p>Classic rock, paper, scissors game.</p>
@@ -122,52 +70,26 @@
             <p>Click an icon to make your move.</p>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              id="close-button"
-              class="btn btn-secondary prompt"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <button type="button" id="close-button" class="btn btn-secondary prompt" data-bs-dismiss="modal"> Close </button>
           </div>
         </div>
       </div>
     </div>
     <!--Feedback Modal-->
-    <div
-      class="modal fade"
-      id="feedback-modal"
-      tabindex="-1"
-      aria-labelledby="feedback-modal-heading"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="feedback-modal" tabindex="-1" aria-labelledby="feedback-modal-heading" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title prompt" id="feedback-modal-heading">
-              Rate the game!
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h5 class="modal-title prompt" id="feedback-modal-heading"> Rate the game! </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body prompt">
             <form action="#" method="post" id="feedback-form">
               <div class="feedback-details">
                 <label for="name" class="form-label">Name:</label>
-                <input 
-                type="text" 
-                id="name" 
-                name="name"
-                placeholder="Your Name"
-                class="form-control"
-                required>
+                <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
                 <label for="age" class="form-label">Age:</label>
-                <input type="number" id="age" name="age" placeholder="Your Age" class="form-control"required>
+                <input type="number" id="age" name="age" placeholder="Your Age" class="form-control" required>
               </div>
               <p>Rate the game from 1 to 5! (5 being the most fun)</p>
               <div class="feedback-details" id="feedback-radios">
@@ -191,35 +113,19 @@
                   <input class="form-check-input" type="radio" id="5" name="rating" value="5" checked>
                   <label for="5" class="form-check-label">5</label>
                 </div>
-              </div><br>
-              <button
-              type="submit"
-              id="submit-button"
-              class="btn btn-success prompt"
-            >
-              Submit
-            </button>
+              </div>
+              <br>
+              <button type="submit" id="submit-button" class="btn btn-success prompt"> Submit </button>
             </form>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              id="close-button"
-              class="btn btn-secondary prompt"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <button type="button" id="close-button-two" class="btn btn-secondary prompt" data-bs-dismiss="modal"> Close </button>
           </div>
         </div>
       </div>
     </div>
     <!--Bootstrapjs and Popper-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script type="module" src="assets/js/game.js"></script>
   </body>
 </html>
