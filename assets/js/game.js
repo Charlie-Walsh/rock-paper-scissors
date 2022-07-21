@@ -12,18 +12,15 @@ const game = {
     scoreBoard: document.querySelector("#score-board"),
     whoWon: document.getElementById("who-won")
 };
-
 function getComputerChoice() {
     game.compChoice = [];
     game.compChoice.push(game.compChoices[Math.floor(Math.random() * 3)]);
 }
-
 function rps() {
     getComputerChoice();
     console.log(game.compChoice);
     let compChoice = game.compChoice[0];
     let plyrChoice = game.playerChoice[0];
-
     // It's a draw
     if (plyrChoice === compChoice) {
         game.whoWon.textContent = "It's a draw!";
@@ -65,32 +62,34 @@ function rps() {
         }
     }
 }
-
 function getPlayerChoice() {
-    game.rock.addEventListener("click", function() {
+    game.rock.addEventListener("click", function () {
         game.playerChoice = [];
         game.playerChoice.push("r");
         console.log(game.playerChoice);
         rps();
     });
-    game.paper.addEventListener("click", function() {
+    game.paper.addEventListener("click", function () {
         game.playerChoice = [];
         game.playerChoice.push("p");
         console.log(game.playerChoice);
         rps();
     });
-    game.scissors.addEventListener("click", function() {
+    game.scissors.addEventListener("click", function () {
         game.playerChoice = [];
         game.playerChoice.push("s");
         console.log(game.playerChoice);
         rps();
     });
 }
-if (typeof module !== "undefined"){
-     module.exports = {
+window.addEventListener("load", function () {
+    getPlayerChoice();
+});
+/*ignore jslint start*/
+if (typeof module !== "undefined") {
+/*ignore jslint end*/
+    module.exports = {
         game,
         getComputerChoice
-        };
+    };
 }
-
-getPlayerChoice();
