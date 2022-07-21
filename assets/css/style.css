@@ -32,13 +32,13 @@ header h1 {
   margin: 30px;
 }
 
-#intructions-button {
+#instructions-button, #feedback-button {
   background-color: orangered;
   color: #fff;
   border: 3px solid white;
 }
 
-#intructions-button:hover {
+#instructions-button, #feedback-button:hover {
   background-color: rgb(175, 73, 36);
   border: 3px solid orange;
 }
@@ -117,6 +117,16 @@ header h1 {
 #who-won {
   color: #fff;
   font-size: x-large;
+}
+
+/*Feedback Modal*/
+
+form p {
+  margin-top: 10px;
+}
+
+#submit-button {
+  margin: 10px;
 }
 
 @media screen and (max-width: 576px) {
