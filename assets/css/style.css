@@ -38,7 +38,12 @@ header h1 {
   border: 3px solid white;
 }
 
-#instructions-button, #feedback-button:hover {
+#instructions-button:hover {
+  background-color: rgb(175, 73, 36);
+  border: 3px solid orange;
+}
+
+#feedback-button:hover {
   background-color: rgb(175, 73, 36);
   border: 3px solid orange;
 }

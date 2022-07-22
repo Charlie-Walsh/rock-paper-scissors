@@ -17,8 +17,13 @@ This game can be played by anyone at anytime, though it will be aimed at a young
 #### First time visitor
 
 * I want a first time visitor to be able to see everything on the same page and its use to be obvious. I will do that with a big title, (Rock, Paper, Scissors), a score board, and three big clickable icons to play the game with.
+![Game Area](assets/images/screens/rps-landing.png)
 
-* If they don't already know the rules I will have a bright, colourful button with the instructions just under the title.
+* If they don't already know the rules I will have a bright, colourful button with the instructions just under the title.<br>
+![Instructions button](assets/images/screens/instructions.png)
+
+* I would like the user to be able to rate the game to collect feedback.<br>
+![Feedback button](assets/images/screens/feedback.png)
 
 ### Colour
 
