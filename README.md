@@ -61,8 +61,13 @@ I wanted to make this game bright and bold to appeal to a younger audience and h
     * Page layout and modal
 * Google Fonts
     * Importing typography
+
+### Other
+
 * Balsamiq
     * Used for creating wireframes
+* GitHub
+    * Used to store the project in a repository.
 
 <hr>
 
